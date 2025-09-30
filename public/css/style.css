@@ -86,5 +86,12 @@
     font-size: 22px;
   }
 }
-
 /* End box-head */
+/* category */
+.card img {
+  width: 100%; /* full chiều ngang card */
+  height: 350px; /* cùng chiều cao cho tất cả ảnh */
+  object-fit: cover; /* cắt ảnh nhưng vẫn giữ tỉ lệ */
+  border-radius: 5px; /* bo góc nhẹ cho đẹp */
+}
+/* end category */
