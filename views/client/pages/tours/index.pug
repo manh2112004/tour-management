@@ -1,10 +1,20 @@
 extends ../../layouts/default.pug
 include ../../mixins/box-head.pug
+
 block main
     .container.my-3
         .row
             .col-12
                 +box-head(pageTitle)
-        ul
-            each tour in tours
-                li #{tour.title}
+
+        .row
+            each item in tours
+                .col-12.col-sm-6.col-lg-4.mb-3
+                    .card.h-100
+                        img(src=item.image, alt=item.title, class="card-img-top img-fluid", style="height: 250px; object-fit: cover;")
+                        .card-body
+                            h5.card-title #{item.title}
+                            b.mr-2.mb-2 #{item.price_special.toLocaleString()}đ
+                            del.mb-2 #{item.price.toLocaleString()}đ
+                            p.font-weight-bold Giảm #{item.discount}%
+                            a(href=`/tours/detail/${item.slug}`, class="btn btn-primary") Xem chi tiết
