@@ -95,3 +95,151 @@
   border-radius: 5px; /* bo góc nhẹ cho đẹp */
 }
 /* end category */
+/* tour-detail */
+.tour-detail .inner-images .inner-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: 1px solid #b5b5b5;
+  border-radius: 5px;
+}
+
+.tour-detail .inner-images .inner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tour-detail .inner-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #c12026;
+  margin-bottom: 10px;
+}
+
+.tour-detail .inner-barcode {
+  margin-bottom: 10px;
+}
+
+.tour-detail .inner-time-start {
+  margin-bottom: 10px;
+}
+
+.tour-detail .inner-stock {
+  margin-bottom: 10px;
+}
+
+.tour-detail .inner-price-special {
+  font-size: 20px;
+  font-weight: 700;
+  color: #c12026;
+  margin-bottom: 10px;
+}
+
+.tour-detail .inner-price {
+  font-weight: 700;
+  color: #3c3c3c;
+  margin-bottom: 10px;
+  text-decoration: line-through;
+}
+
+.tour-detail .inner-percent {
+  font-weight: 700;
+  color: #3c3c3c;
+  margin-bottom: 10px;
+}
+
+.tour-detail .inner-infomation {
+  margin-top: 30px;
+  border: 1px solid #b5b5b5;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.tour-detail .inner-infomation .inner-label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #c12026;
+  border-bottom: 1px solid #b5b5b5;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.tour-detail .inner-infomation .inner-text {
+  white-space: pre-line;
+}
+
+.tour-detail .inner-infomation .inner-text img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* End tour-detail */
+/* Responsive tour-detail */
+@media (max-width: 992px) {
+  .tour-detail .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .tour-detail .inner-title {
+    font-size: 18px;
+  }
+
+  .tour-detail .inner-price-special {
+    font-size: 18px;
+  }
+
+  .tour-detail .inner-images img {
+    width: 100%;
+    height: auto;
+  }
+
+  .tour-detail .inner-infomation .inner-label {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tour-detail .inner-title {
+    font-size: 16px;
+  }
+
+  .tour-detail .inner-price-special {
+    font-size: 16px;
+  }
+
+  .tour-detail .inner-price,
+  .tour-detail .inner-percent {
+    font-size: 14px;
+  }
+
+  .tour-detail .inner-images .swiper-slide img {
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  form[form-add-to-cart] input,
+  form[form-add-to-cart] button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tour-detail .inner-images .swiper-slide img {
+    max-height: 200px;
+  }
+
+  .tour-detail .inner-infomation {
+    padding: 8px;
+  }
+
+  .tour-detail .inner-infomation .inner-label {
+    font-size: 14px;
+  }
+
+  .tour-detail .inner-infomation .inner-text {
+    font-size: 13px;
+  }
+}
+/* End Responsive tour-detail */
