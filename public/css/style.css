@@ -1,0 +1,90 @@
+/* Header */
+.header {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.header .inner-logo img {
+  max-height: 50px;
+  max-width: 100%;
+}
+
+.header .inner-menu > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.header .inner-menu > ul > li {
+  margin-left: 20px;
+}
+
+/* End Header */
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* End Footer */
+
+/* box-head */
+.box-head {
+  margin-bottom: 30px;
+}
+
+.box-head .inner-title {
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 600;
+  color: green;
+}
+/* Responsive */
+/* Tablet (dưới 992px) */
+@media (max-width: 991.98px) {
+  .header .inner-logo img {
+    max-height: 40px;
+  }
+
+  .header .inner-menu > ul {
+    justify-content: center;
+  }
+}
+/* Mobile (dưới 768px) */
+@media (max-width: 767.98px) {
+  .header .container {
+    flex-direction: column;
+  }
+
+  .header .inner-menu > ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .inner-menu > ul > li {
+    margin: 10px 0;
+  }
+
+  .header {
+    text-align: center;
+  }
+}
+/* Mobile nhỏ (dưới 576px) */
+@media (max-width: 575.98px) {
+  .header .inner-logo img {
+    max-height: 35px;
+  }
+
+  .box-head .inner-title {
+    font-size: 22px;
+  }
+}
+
+/* End box-head */
