@@ -124,7 +124,7 @@ if (formOder) {
       .then((data) => {
         if (data.code == 200) {
           localStorage.removeItem("cart");
-          window.location.href(`/order/success?orderCode=${data.orderCode}`);
+          window.location.href = `/order/success?orderCode=${data.orderCode}`;
         } else {
           alert("đặt hàng thất bại");
         }
