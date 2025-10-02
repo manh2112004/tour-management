@@ -8,7 +8,6 @@ export const index = async (req: Request, res: Response) => {
       deleted: false,
     },
   });
-  console.log(categories);
   res.render("admin/pages/categories/index.pug", {
     pageTitle: "Danh mục tour",
     pageActive: "categories",
