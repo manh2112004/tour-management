@@ -1,5 +1,6 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
+import path from "path";
 import clientRoutes from "./routes/client/index-route";
 import adminRoutes from "./routes/admin/index-route";
 import moment from "moment";
@@ -15,6 +16,12 @@ app.set("views", "./views");
 app.set("view engine", "pug");
 app.locals.moment = moment;
 app.locals.prefixAdmin = systemConfig.prefixAdmin;
+// TinyMCE
+app.use(
+  "/tinymce",
+  express.static(path.join(__dirname, "node_modules", "tinymce"))
+);
+// End TinyMCE
 // client routes
 clientRoutes(app);
 // admin routes
