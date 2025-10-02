@@ -1,0 +1,20 @@
+aside.col-md-3.col-lg-2.bg-light.sidebar.py-3
+    nav.nav.flex-column
+        a.nav-link(class=pageActive=='dashboard' ? 'active' : '', href="/admin")
+            i.bi.bi-speedometer2.me-2
+            | Tổng quan
+        a.nav-link(class=pageActive=='tours' ? 'active' : '', href="/admin/tours")
+            i.bi.bi-geo-alt.me-2
+            | Quản lý Tour
+        a.nav-link(class=pageActive=='categories' ? 'active' : '', href="/admin/categories")
+            i.bi.bi-tags.me-2
+            | Danh mục
+        a.nav-link(class=pageActive=='bookings' ? 'active' : '', href="/admin/bookings")
+            i.bi.bi-calendar-check.me-2
+            | Đơn đặt tour
+        a.nav-link(class=pageActive=='customers' ? 'active' : '', href="/admin/account")
+            i.bi.bi-person-circle.me-2
+            | Tài khoản Admin
+        a.nav-link(class=pageActive=='reports' ? 'active' : '', href="/admin/setting")
+            i.bi.bi-gear.me-2
+            | Cài đặt chung
